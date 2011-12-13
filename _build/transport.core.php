@@ -16,7 +16,7 @@ if ($isCommandLine) {
     }
 }
 require_once dirname(__FILE__).'/moddistribution.class.php';
-$distribution = new modCoreDistribution($config);
+$distribution = new modDistribution($config);
 $distribution->initialize();
 $distribution->build();
 return '';

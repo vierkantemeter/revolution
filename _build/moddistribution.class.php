@@ -1,18 +1,21 @@
 <?php
 /**
  * @package modx
+ * @subpackage build
  */
-abstract class modDistribution {
+class modDistribution {
     /** @var xPDO $xpdo */
     public $xpdo;
 
     public $config = array();
     public $debugTimeStart = 0;
     public $packageDirectory = '';
+    /** @var modDistributionParser $parser */
+    public $parser;
     /** @var xPDOTransport $package */
     public $package;
     /** @var string $name The name of the distribution */
-    public $name = '';
+    public $name = 'core';
     /** @var SimpleXMLElement $data */
     public $data;
 
@@ -206,33 +209,120 @@ abstract class modDistribution {
 
     public function build() {
         $this->xpdo->log(xPDO::LOG_LEVEL_INFO,'Adding in Vehicles...');
-        if ($this->_loadDistributionFile()) {
-            $this->gather($this->data->children());
-            $this->pack();
+        if ($this->getDistribution()) {
+            if ($this->loadParser()) {
+                $this->parser->gather($this->data->children());
+                $this->pack();
+            }
         }
         $this->endDebug();
     }
 
+    public function loadParser() {
+        $class = !empty($this->config['parser']) ? $this->config['parser'] : 'modDistributionXmlParser';
+        if (class_exists($class)) {
+            $this->parser = new $class($this);
+        }
+        return $this->parser;
+    }
+
+    /**
+     * Eventually enable different way of configuring this besides static xml-based files
+     * @return boolean
+     */
+    public function getDistribution() {
+        $this->config['distribution'] = array_key_exists('distribution',$this->config) && !empty($this->config['distribution']) ? $this->config['distribution'] : 'core';
+        return $this->_loadDistributionFile();
+    }
+
     protected function _loadDistributionFile() {
-        if (empty($this->name)) return false;
+        if (empty($this->config['distribution'])) return false;
 
         $file = $this->getDistributionFileLocation();
         if (!file_exists($file)) return false;
         $xml = file_get_contents($file);
-        /** @TODO Refactor this and $this->data to a reader class to properly allow different types of data storage */
+        /** @TODO Eventually refactor this to properly allow different types of data storage besides just xml for the distribution file */
         $this->data = simplexml_load_string($xml);
-        return $this->data;
+        $this->name = !empty($this->data['name']) ? (string)$this->data['name'] : 'core';
+        $attributes = $this->data->attributes();
+        foreach ($attributes as $attr) {
+            if (empty($this->config[$attr->getName()])) {
+                $this->config[$attr->getName()] = (string)$attr;
+            }
+        }
+        return true;
     }
 
-    protected function getDistributionFileLocation() {
+    public function getDistributionFileLocation() {
         if (empty($this->config['distributionFile'])) {
-            $this->config['distributionFile'] = (dirname(__FILE__).'/distributions/'.$this->name.'.distribution.xml');
+            $this->config['distributionFile'] = (dirname(__FILE__).'/distributions/'.$this->config['distribution'].'.distribution.xml');
         }
         return realpath($this->config['distributionFile']);
     }
 
+    /**
+     * Zip up package
+     * @return boolean
+     */
+    public function pack() {
+        $this->xpdo->log(xPDO::LOG_LEVEL_INFO,'Beginning to zip up transport package...');
+        $packed = $this->package->pack();
+        if ($packed) {
+            $this->log(xPDO::LOG_LEVEL_INFO,'Transport zip created. Build script finished.');
+        } else {
+            $this->log(xPDO::LOG_LEVEL_INFO,'Error creating transport zip!');
+        }
+        return $packed;
+    }
+
+    /**
+     * End the debug timing
+     */
+    public function endDebug() {
+        $mtime = microtime();
+        $mtime = explode(" ", $mtime);
+        $mtime = $mtime[1] + $mtime[0];
+        $tend = $mtime;
+        $totalTime = ($tend - $this->debugTimeStart);
+        $totalTime = sprintf("%2.4f s", $totalTime);
+
+        echo "\nExecution time: {$totalTime}\n"; flush();
+    }
+}
+
+/**
+ * Abstract class for parsing distribution files
+ *
+ * @package modx
+ * @subpackage build
+ */
+abstract class modDistributionParser {
+    /** @var xPDO $xpdo */
+    public $xpdo;
+    /** @var modDistribution $distribution */
+    public $distribution;
+
+    function __construct(modDistribution &$distribution) {
+        $this->distribution =& $distribution;
+        $this->xpdo =& $distribution->xpdo;
+    }
+
+    /**
+     * @param $children
+     */
+    abstract public function gather($children);
+}
+
+/**
+ * For parsing XML distribution files
+ * @package modx
+ * @subpackage build
+ */
+class modDistributionXmlParser extends modDistributionParser {
+    /**
+     * @param $children
+     */
     public function gather($children) {
-        /** @var SimpleXMLElement $child */
         foreach ($children as $child) {
             $child = new modDistributionNode($child);
             switch ($child->getName()) {
@@ -252,21 +342,27 @@ abstract class modDistribution {
         }
     }
 
+    /**
+     * @param modDistributionNode $child
+     * @return mixed
+     */
     public function loadExternal(modDistributionNode $child) {
         $file = $child->getValue();
         $file = str_replace('{build_dir}',MODX_BUILD_DIR,$file);
         if (!file_exists($file)) {
-            $file = dirname($this->getDistributionFileLocation()).'/'.$this->name.'/'.$file;
+            $file = dirname($this->distribution->getDistributionFileLocation()).'/'.$this->distribution->name.'/'.$file;
         }
         if (!file_exists($file)) return false;
         $data = file_get_contents($file);
         return $data;
     }
 
+    /**
+     * @param modDistributionNode $vehicleCollection
+     */
     public function addVehicleCollection(modDistributionNode $vehicleCollection) {
         $attributes = $this->parseVehicleAttributes($vehicleCollection);
 
-        /** @var SimpleXMLElement $vehicleData */
         $vehicleClasses = array();
         $data = $vehicleCollection->children();
         foreach ($data as $vehicleData) {
@@ -281,10 +377,15 @@ abstract class modDistribution {
         }
 
         foreach ($vehicleClasses as $vehicleClass => $count) {
-            $this->log(xPDO::LOG_LEVEL_INFO,'Added in '.$count.' '.str_replace(array('_mysql','_sqlsrv'),'',$vehicleClass).' ');
+            $this->distribution->log(xPDO::LOG_LEVEL_INFO,'Added in '.$count.' '.str_replace(array('_mysql','_sqlsrv'),'',$vehicleClass).' ');
         }
     }
 
+    /**
+     * @param modDistributionNode $vehicleData
+     * @param array $attributes
+     * @return xPDOObject|boolean
+     */
     public function addVehicle(modDistributionNode $vehicleData,array $attributes = array()) {
         $vehicle = false;
         $vehicleAttributes = $this->parseVehicleAttributes($vehicleData);
@@ -292,15 +393,20 @@ abstract class modDistribution {
         $class = $vehicleData->getAttribute('class','xPDOObjectVehicle');
         switch ($class) {
             case 'xPDOObjectVehicle':
-                $this->addObjectVehicle($vehicleData,$attributes);
+                $vehicle = $this->addObjectVehicle($vehicleData,$attributes);
                 break;
             case 'xPDOFileVehicle':
-                $this->addFileVehicle($vehicleData,$attributes);
+                $vehicle = $this->addFileVehicle($vehicleData,$attributes);
                 break;
         }
         return $vehicle;
     }
 
+    /**
+     * @param modDistributionNode $vehicleData
+     * @param array $attributes
+     * @return array|boolean
+     */
     public function addFileVehicle(modDistributionNode $vehicleData,array $attributes = array()) {
         $fileAttributes = $vehicleData->children();
         unset($attributes['class']);
@@ -308,7 +414,6 @@ abstract class modDistribution {
         $file = array();
 
         foreach ($fileAttributes as $fileAttribute) {
-            /** @var SimpleXMLElement $field */
             $fileNode = new modDistributionNode($fileAttribute);
             if ($fileNode->getName() == 'xpdo_resolver') {
                 $attributes['resolve'][] = $this->addResolver($fileNode);
@@ -318,10 +423,15 @@ abstract class modDistribution {
                 $file[$fileNode->getName()] = $fileNode->getValue();
             }
         }
-        $this->package->put($file,$attributes);
+        $this->distribution->package->put($file,$attributes);
         return $file;
     }
 
+    /**
+     * @param modDistributionNode $vehicleData
+     * @param array $attributes
+     * @return xPDOObject|boolean
+     */
     public function addObjectVehicle(modDistributionNode $vehicleData,array $attributes = array()) {
         $objectClass = $vehicleData->getAttribute('object_class');
         if (empty($objectClass)) return false;
@@ -344,10 +454,14 @@ abstract class modDistribution {
                 $vehicle->set($field->getName(),$field->getValue());
             }
         }
-        $this->package->put($vehicle,$attributes);
+        $this->distribution->package->put($vehicle,$attributes);
         return $vehicle;
     }
 
+    /**
+     * @param modDistributionNode $node
+     * @return array
+     */
     public function addResolver(modDistributionNode $node) {
         $resolver = array();
         $children = $node->children();
@@ -358,6 +472,10 @@ abstract class modDistribution {
         return $resolver;
     }
 
+    /**
+     * @param modDistributionNode $node
+     * @return array
+     */
     public function addValidator(modDistributionNode $node) {
         $validator = array();
         $children = $node->children();
@@ -368,6 +486,11 @@ abstract class modDistribution {
         return $validator;
     }
 
+    /**
+     * @param xPDOObject $object
+     * @param modDistributionNode $data
+     * @return mixed
+     */
     public function getRelatedObject(xPDOObject &$object,modDistributionNode $data) {
         $objectClass = $data->getAttribute('object_class');
         if (empty($objectClass)) return;
@@ -431,55 +554,47 @@ abstract class modDistribution {
         return $attributes;
     }
 
-    /**
-     * Zip up package
-     * @return boolean
-     */
-    public function pack() {
-        $this->xpdo->log(xPDO::LOG_LEVEL_INFO,'Beginning to zip up transport package...');
-        $packed = $this->package->pack();
-        if ($packed) {
-            $this->log(xPDO::LOG_LEVEL_INFO,'Transport zip created. Build script finished.');
-        } else {
-            $this->log(xPDO::LOG_LEVEL_INFO,'Error creating transport zip!');
-        }
-        return $packed;
-    }
-
-    public function endDebug() {
-        $mtime = microtime();
-        $mtime = explode(" ", $mtime);
-        $mtime = $mtime[1] + $mtime[0];
-        $tend = $mtime;
-        $totalTime = ($tend - $this->debugTimeStart);
-        $totalTime = sprintf("%2.4f s", $totalTime);
-
-        echo "\nExecution time: {$totalTime}\n"; flush();
-    }
-}
-class modCoreDistribution extends modDistribution {
-    public $name = 'core';
 }
 
-
+/**
+ * Used to represent a node in the distribution XML to properly handle various forms of casting
+ * @package modx
+ * @subpackage build
+ */
 class modDistributionNode {
     /** @var SimpleXMLElement $node */
     public $node;
+    /** @var array $attributes */
     public $attributes = array();
 
     public function __construct ($input = null,$flags = 0,$iterator_class='ArrayIterator') {
         $this->node = $input;
     }
 
+    /**
+     * @return string
+     */
     public function getName() {
         return $this->node->getName();
     }
+
+    /**
+     * @param string $ns
+     * @param boolean $isPrefix
+     * @return SimpleXMLElement
+     */
     public function children($ns = '',$isPrefix = false) {
         return $this->node->children($ns,$isPrefix);
     }
+    /**
+     * @param string $ns
+     * @param null $isPrefix
+     * @return SimpleXMLElement
+     */
     public function attributes($ns = '',$isPrefix = null) {
         return $this->node->attributes($ns,$isPrefix);
     }
+
     /**
      * @return mixed
      */
@@ -537,11 +652,22 @@ class modDistributionNode {
         return $value;
     }
 
+    /**
+     * Get an attribute for the node
+     *
+     * @param string $key
+     * @param mixed $default
+     * @return nixed
+     */
     public function getAttribute($key,$default = null) {
         $this->collectAttributes();
         return isset($this->attributes[$key]) ? (string)$this->attributes[$key] : $default;
     }
 
+    /**
+     * Collect and store the attributes
+     * @return array
+     */
     public function collectAttributes() {
         if (!empty($this->attributes)) return $this->attributes;
         $attrs = $this->node->attributes();
@@ -552,6 +678,9 @@ class modDistributionNode {
         return $this->attributes;
     }
 
+    /**
+     * @return string
+     */
     public function __toString() {
         return $this->node->__toString();
     }

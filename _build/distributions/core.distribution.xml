@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<distribution name="core">
+<distribution name="core" parser="modDistributionXmlParser">
    <vehicle object_class="modNamespace" update_object="1" preserve_keys="1">
         <name>core</name>
         <path>{core_path}</path>
