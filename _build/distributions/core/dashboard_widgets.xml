@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
-    <vehiclecollection preserve_keys="1" update_object="1" unique_key="id">
+    <vehiclecollection preserve_keys="1" update_object="1" unique_key="name">
         <vehicle object_class="modDashboardWidget">
             <name>w_newsfeed</name>
             <description>w_newsfeed_desc</description>
