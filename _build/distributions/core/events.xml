@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="1">
+        <vehicle object_class="modEvent">
+            <name>OnPluginEventBeforeSave</name>
+            <service>1</service>
+            <groupname>Plugin Events</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginEventSave</name>
+            <service>1</service>
+            <groupname>Plugin Events</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginEventBeforeRemove</name>
+            <service>1</service>
+            <groupname>Plugin Events</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginEventRemove</name>
+            <service>1</service>
+            <groupname>Plugin Events</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceGroupSave</name>
+            <service>1</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceGroupBeforeSave</name>
+            <service>1</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceGroupRemove</name>
+            <service>1</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceGroupBeforeRemove</name>
+            <service>1</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnippetBeforeSave</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnippetSave</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnippetBeforeRemove</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnippetRemove</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnipFormPrerender</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnipFormRender</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeSnipFormSave</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnipFormSave</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeSnipFormDelete</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSnipFormDelete</name>
+            <service>1</service>
+            <groupname>Snippets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateBeforeSave</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateSave</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateBeforeRemove</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateRemove</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTempFormPrerender</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTempFormRender</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeTempFormSave</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTempFormSave</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeTempFormDelete</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTempFormDelete</name>
+            <service>1</service>
+            <groupname>Templates</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateVarBeforeSave</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateVarSave</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateVarBeforeRemove</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTemplateVarRemove</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVFormPrerender</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVFormRender</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeTVFormSave</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVFormSave</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeTVFormDelete</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVFormDelete</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVInputRenderList</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVInputPropertiesList</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVOutputRenderList</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnTVOutputRenderPropertiesList</name>
+            <service>1</service>
+            <groupname>Template Variables</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserGroupBeforeSave</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserGroupSave</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserGroupBeforeRemove</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserGroupRemove</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserGroupFormSave</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserGroupFormSave</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserGroupFormRemove</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserGroupFormRemove</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocFormPrerender</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocFormRender</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeDocFormSave</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocFormSave</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeDocFormDelete</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocFormDelete</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocPublished</name>
+            <service>5</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnDocUnPublished</name>
+            <service>5</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeEmptyTrash</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnEmptyTrash</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceTVFormPrerender</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceTVFormRender</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceDelete</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceUndelete</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceBeforeSort</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceSort</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceDuplicate</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceToolbarLoad</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceRemoveFromResourceGroup</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnResourceAddToResourceGroup</name>
+            <service>1</service>
+            <groupname>Resources</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnRichTextEditorRegister</name>
+            <service>1</service>
+            <groupname>RichText Editor</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnRichTextEditorInit</name>
+            <service>1</service>
+            <groupname>RichText Editor</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnRichTextBrowserInit</name>
+            <service>1</service>
+            <groupname>RichText Editor</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebLogin</name>
+            <service>3</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeWebLogout</name>
+            <service>3</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebLogout</name>
+            <service>3</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerLogin</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeManagerLogout</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerLogout</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeWebLogin</name>
+            <service>3</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebAuthentication</name>
+            <service>3</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeManagerLogin</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerAuthentication</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerLoginFormRender</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerLoginFormPrerender</name>
+            <service>2</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPageUnauthorized</name>
+            <service>1</service>
+            <groupname>Security</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserFormPrerender</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserFormRender</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserFormSave</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserFormSave</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserFormDelete</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserFormDelete</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserNotFound</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserActivate</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserActivate</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeUserDeactivate</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserDeactivate</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserChangePassword</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserBeforeRemove</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserBeforeSave</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserSave</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserRemove</name>
+            <service>1</service>
+            <groupname>Users</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserBeforeAddToGroup</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserAddToGroup</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserBeforeRemoveFromGroup</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnUserRemoveFromGroup</name>
+            <service>1</service>
+            <groupname>User Groups</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebPagePrerender</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeCacheUpdate</name>
+            <service>4</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnCacheUpdate</name>
+            <service>4</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnLoadWebPageCache</name>
+            <service>4</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeSaveWebPageCache</name>
+            <service>4</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSiteRefresh</name>
+            <service>1</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnFileManagerUpload</name>
+            <service>1</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnFileCreateFormPrerender</name>
+            <service>1</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerPageInit</name>
+            <service>2</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerPageBeforeRender</name>
+            <service>2</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnManagerPageAfterRender</name>
+            <service>2</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebPageInit</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnLoadWebDocument</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnParseDocument</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnWebPageComplete</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeManagerPageInit</name>
+            <service>2</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPageNotFound</name>
+            <service>1</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnHandleRequest</name>
+            <service>5</service>
+            <groupname>System</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnSiteSettingsRender</name>
+            <service>1</service>
+            <groupname>Settings</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnInitCulture</name>
+            <service>3</service>
+            <groupname>Internationalization</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnCategorySave</name>
+            <service>1</service>
+            <groupname>Categories</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnCategoryBeforeSave</name>
+            <service>1</service>
+            <groupname>Categories</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnCategoryRemove</name>
+            <service>1</service>
+            <groupname>Categories</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnCategoryBeforeRemove</name>
+            <service>1</service>
+            <groupname>Categories</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkSave</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkBeforeSave</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkRemove</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkBeforeRemove</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkFormPrerender</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkFormRender</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeChunkFormSave</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkFormSave</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforeChunkFormDelete</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnChunkFormDelete</name>
+            <service>1</service>
+            <groupname>Chunks</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextSave</name>
+            <service>1</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextBeforeSave</name>
+            <service>1</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextRemove</name>
+            <service>1</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextBeforeRemove</name>
+            <service>1</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextFormPrerender</name>
+            <service>2</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnContextFormRender</name>
+            <service>2</service>
+            <groupname>Contexts</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginSave</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginBeforeSave</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginRemove</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginBeforeRemove</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginFormPrerender</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginFormRender</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforePluginFormSave</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginFormSave</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnBeforePluginFormDelete</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPluginFormDelete</name>
+            <service>1</service>
+            <groupname>Plugins</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPropertySetSave</name>
+            <service>1</service>
+            <groupname>Property Sets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPropertySetBeforeSave</name>
+            <service>1</service>
+            <groupname>Property Sets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPropertySetRemove</name>
+            <service>1</service>
+            <groupname>Property Sets</groupname>
+        </vehicle>
+        <vehicle object_class="modEvent">
+            <name>OnPropertySetBeforeRemove</name>
+            <service>1</service>
+            <groupname>Property Sets</groupname>
+        </vehicle>
+    </vehiclecollection>
+</data>

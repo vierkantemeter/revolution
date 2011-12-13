@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<distribution name="core">
+   <vehicle object_class="modNamespace" update_object="1" preserve_keys="1">
+        <name>core</name>
+        <path>{core_path}</path>
+    </vehicle>
+
+    <vehicle object_class="modWorkspace" update_object="0" preserve_keys="1">
+        <id>1</id>
+        <name>Default MODX workspace</name>
+        <path>{core_path}</path>
+        <active>1</active>
+    </vehicle>
+
+    <external>actions.xml</external>
+    <external>menus.xml</external>
+    <external>transport.providers.xml</external>
+    <external>content_types.xml</external>
+    <external>classmap.xml</external>
+    <external>events.xml</external>
+    <external>system_settings.xml</external>
+    <external>context_settings.xml</external>
+    <external>dashboards.xml</external>
+    <external>dashboard_widgets.xml</external>
+    <external>user_groups.xml</external>
+    <external>user_group_roles.xml</external>
+    <external>access.policy_template_groups.xml</external>
+    <external>access.policy_templates.xml</external>
+    <external>access.policies.xml</external>
+    <external>contexts.xml</external>
+</distribution>

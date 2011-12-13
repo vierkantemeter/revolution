@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="1" unique_key="id">
+        <vehicle object_class="modDashboardWidget">
+            <name>w_newsfeed</name>
+            <description>w_newsfeed_desc</description>
+            <type>file</type>
+            <size>half</size>
+            <content>[[++manager_path]]controllers/default/dashboard/widget.modx-news.php</content>
+            <namespace>core</namespace>
+            <lexicon>core:dashboards</lexicon>
+        </vehicle>
+        <vehicle object_class="modDashboardWidget">
+            <name>w_securityfeed</name>
+            <description>w_securityfeed_desc</description>
+            <type>file</type>
+            <size>half</size>
+            <content>[[++manager_path]]controllers/default/dashboard/widget.modx-security.php</content>
+            <namespace>core</namespace>
+            <lexicon>core:dashboards</lexicon>
+        </vehicle>
+        <vehicle object_class="modDashboardWidget">
+            <name>w_whosonline</name>
+            <description>w_whosonline_desc</description>
+            <type>file</type>
+            <size>half</size>
+            <content>[[++manager_path]]controllers/default/dashboard/widget.grid-online.php</content>
+            <namespace>core</namespace>
+            <lexicon>core:dashboards</lexicon>
+        </vehicle>
+        <vehicle object_class="modDashboardWidget">
+            <name>w_recentlyeditedresources</name>
+            <description>w_recentlyeditedresources_desc</description>
+            <type>file</type>
+            <size>half</size>
+            <content>[[++manager_path]]controllers/default/dashboard/widget.grid-rer.php</content>
+            <namespace>core</namespace>
+            <lexicon>core:dashboards</lexicon>
+        </vehicle>
+        <vehicle object_class="modDashboardWidget">
+            <name>w_configcheck</name>
+            <description>w_configcheck_desc</description>
+            <type>file</type>
+            <size>full</size>
+            <content>[[++manager_path]]controllers/default/dashboard/widget.configcheck.php</content>
+            <namespace>core</namespace>
+            <lexicon>core:dashboards</lexicon>
+        </vehicle>
+    </vehiclecollection>
+</data>

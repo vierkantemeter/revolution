@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="1" unique_key="name">
+        <vehicle object_class="transport.modTransportProvider">
+            <id type="int">1</id>
+            <name>modx.com</name>
+            <description><![CDATA[The official MODX transport facility for Extras.]]></description>
+            <service_url>http://rest.modx.com/extras/</service_url>
+            <created type="now" />
+        </vehicle>
+    </vehiclecollection>
+</data>

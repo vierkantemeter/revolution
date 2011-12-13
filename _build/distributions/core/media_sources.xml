@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="0">
+        <vehicle object_class="sources.modMediaSource">
+            <id type="int">1</id>
+            <name>Filesystem</name>
+            <description />
+            <class_key>sources.modFileMediaSource</class_key>
+        </vehicle>
+    </vehiclecollection>
+</data>

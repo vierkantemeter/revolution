@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="0">
+        <vehicle object_class="modSystemSetting">
+            <key>access_category_enabled</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>access_context_enabled</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>access_resource_group_enabled</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>allow_forward_across_contexts</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>allow_manager_login_forgot_password</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>allow_multiple_emails</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>allow_tags_in_post</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>archive_with</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>auto_menuindex</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>auto_check_pkg_updates</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>auto_check_pkg_updates_cache_expire</key>
+            <value type="int">15</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>automatic_alias</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>base_help_url</key>
+            <value>http://rtfm.modx.com/display/revolution20/</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>blocked_minutes</key>
+            <value type="int">60</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_action_map</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_context_settings</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_db</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_db_expires</key>
+            <value type="int">0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_db_session</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_db_session_lifetime</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_default</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_disabled</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_expires</key>
+            <value type="int">0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_format</key>
+            <value>0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_handler</key>
+            <value>xPDOFileCache</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_lang_js</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_lexicon_topics</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_noncore_lexicon_topics</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_resource</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_resource_expires</key>
+            <value type="int">0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_scripts</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cache_system_settings</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>clear_cache_refresh_trees</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>caching</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>compress_css</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>compress_js</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>compress_js_max_files</key>
+            <value type="int">10</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>compress_js_groups</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>container_suffix</key>
+            <value>/</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>context_tree_sort</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>context_tree_sortby</key>
+            <value>rank</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>context_tree_sortdir</key>
+            <value>ASC</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>cultureKey</key>
+            <value>en</value>
+            <xtype>modx-combo-language</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>debug</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>default_duplicate_publish_option</key>
+            <value>preserve</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>default_media_source</key>
+            <value>1</value>
+            <xtype>modx-combo-source</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>default_per_page</key>
+            <value type="int">20</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>default_template</key>
+            <value>1</value>
+            <xtype>modx-combo-template</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>default_content_type</key>
+            <value>1</value>
+            <xtype>modx-combo-content-type</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>editor_css_path</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>editor</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>editor_css_selectors</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>editor</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>emailsender</key>
+            <value>email@example.com</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>emailsubject</key>
+            <value>Your login details</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>enable_dragdrop</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>error_page</key>
+            <value type="int">1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>failed_login_attempts</key>
+            <value type="int">5</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>fe_editor_lang</key>
+            <value>en</value>
+            <xtype>modx-combo-language</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>feed_modx_news</key>
+            <value>http://feeds.feedburner.com/modx-announce</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>feed_modx_news_enabled</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>feed_modx_security</key>
+            <value>http://feeds.feedburner.com/modxsecurity</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>feed_modx_security_enabled</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>filemanager_path</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>filemanager_path_relative</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>filemanager_url</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>filemanager_url_relative</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>forgot_login_email</key>
+            <value type="html">&lt;p&gt;Hello ,&lt;/p&gt;
+                &lt;p&gt;A request for a password reset has been issued for your MODX user. If you sent this, you may
+                follow this link and use this password to login. If you did not send this request, please ignore this
+                email.&lt;/p&gt;
+
+                &lt;p&gt;
+                &lt;strong&gt;Activation Link:&lt;/strong&gt; ?modahsh=&lt;br /&gt;
+                &lt;strong&gt;Username:&lt;/strong&gt; &lt;br /&gt;
+                &lt;strong&gt;Password:&lt;/strong&gt; &lt;br /&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;After you log into the MODX Manager, you can change your password again, if you wish.&lt;/p&gt;
+
+                &lt;p&gt;Regards,&lt;br /&gt;Site Administrator&lt;/p&gt;</value>
+            <xtype>textarea</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>forward_merge_excludes</key>
+            <value>type,published,class_key,context_key</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_lowercase_only</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_max_length</key>
+            <value type="int">0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_restrict_chars</key>
+            <value>pattern</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_restrict_chars_pattern</key>
+            <value type="html">/[\0\x0B\t\n\r\f\a&amp;=+%#&lt;&gt;"~:`@\?\[\]\{\}\|\^'\\]/</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_strip_element_tags</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_translit</key>
+            <value>none</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_translit_class</key>
+            <value>translit.modTransliterate</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_translit_class_path</key>
+            <value>{core_path}components/</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_trim_chars</key>
+            <value>/.-_</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_word_delimiter</key>
+            <value>-</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_alias_word_delimiters</key>
+            <value>-_</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>friendly_urls</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>global_duplicate_uri_check</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>hidemenu_default</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>inline_help</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>locale</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>log_level</key>
+            <value type="int">1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>log_target</key>
+            <value>FILE</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_html5_cache</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>link_tag_scheme</key>
+            <value>-1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_charset</key>
+            <value>UTF-8</value>
+            <xtype>modx-combo-charset</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_encoding</key>
+            <value>8bit</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_use_smtp</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_auth</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_helo</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_hosts</key>
+            <value>localhost</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_keepalive</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_pass</key>
+            <value/>
+            <xtype>text-password</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_port</key>
+            <value type="int">587</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_prefix</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_single_to</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_timeout</key>
+            <value type="int">10</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>mail_smtp_user</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>mail</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_date_format</key>
+            <value>Y-m-d</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_favicon_url</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_js_cache_file_locking</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_js_cache_max_age</key>
+            <value type="int">3600</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_js_document_root</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_js_zlib_output_compression</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_time_format</key>
+            <value>g:i a</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_direction</key>
+            <value>ltr</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_lang_attribute</key>
+            <value>en</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_language</key>
+            <value>en</value>
+            <xtype>modx-combo-language</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>manager_theme</key>
+            <value>default</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>modx_charset</key>
+            <value>UTF-8</value>
+            <xtype>modx-combo-charset</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>principal_targets</key>
+            <value>modAccessContext,modAccessResourceGroup,modAccessCategory</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>proxy_auth_type</key>
+            <value>BASIC</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>proxy</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>proxy_host</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>proxy</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>proxy_password</key>
+            <value/>
+            <xtype>text-password</xtype>
+            <namespace>core</namespace>
+            <area>proxy</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>proxy_port</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>proxy</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>proxy_username</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>proxy</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>password_generated_length</key>
+            <value type="int">8</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>password_min_length</key>
+            <value type="int">8</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_allow_src_above_docroot</key>
+            <value type="boolean"/>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_cache_maxage</key>
+            <value>30</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_cache_maxsize</key>
+            <value>100</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_cache_maxfiles</key>
+            <value>10000</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_cache_source_enabled</key>
+            <value/>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_document_root</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_error_bgcolor</key>
+            <value>CCCCFF</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_error_textcolor</key>
+            <value>FF0000</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_error_fontsize</key>
+            <value>1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_far</key>
+            <value>C</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_imagemagick_path</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nohotlink_enabled</key>
+            <value>1</value>
+            <xtype type="boolean">combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nohotlink_erase_image</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nohotlink_valid_domains</key>
+            <value>{http_host}</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nohotlink_text_message</key>
+            <value>Off-server thumbnailing is not allowed</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_enabled</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_erase_image</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_require_refer</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_text_message</key>
+            <value>Off-server linking is not allowed</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_valid_domains</key>
+            <value>{http_host}</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_nooffsitelink_watermark_src</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>phpthumb_zoomcrop</key>
+            <value>0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>phpthumb</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>publish_default</key>
+            <value/>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>rb_base_dir</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>rb_base_url</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>request_controller</key>
+            <value>index.php</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>gateway</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>request_method_strict</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>gateway</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>request_param_alias</key>
+            <value>q</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>gateway</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>request_param_id</key>
+            <value>id</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>gateway</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>resolve_hostnames</key>
+            <value>0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>resource_tree_node_name</key>
+            <value>pagetitle</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>resource_tree_node_tooltip</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>richtext_default</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>search_default</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>server_offset_time</key>
+            <value type="int">0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>server_protocol</key>
+            <value>http</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_cookie_domain</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_cookie_lifetime</key>
+            <value type="int">604800</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_cookie_path</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_cookie_secure</key>
+            <value/>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_gc_maxlifetime</key>
+            <value type="int">604800</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_handler_class</key>
+            <value>modSessionHandler</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>session_name</key>
+            <value/>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>session</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>set_header</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>show_tv_categories_header</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>signupemail_message</key>
+            <value type="html">&lt;p&gt;Hello ,&lt;/p&gt;
+                &lt;p&gt;Here are your login details for the MODX Manager:&lt;/p&gt;
+
+                &lt;p&gt;
+                &lt;strong&gt;Username:&lt;/strong&gt; &lt;br /&gt;
+                &lt;strong&gt;Password:&lt;/strong&gt; &lt;br /&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;Once you log into the MODX Manager at , you can change your password.&lt;/p&gt;
+
+                &lt;p&gt;Regards,&lt;br /&gt;Site Administrator&lt;/p&gt;</value>
+            <xtype>textarea</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>site_name</key>
+            <value>MODX Revolution</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>site_start</key>
+            <value type="int">1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>site_status</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>site_unavailable_message</key>
+            <value>The site is currently unavailable</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>site_unavailable_page</key>
+            <value>0</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>strip_image_paths</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>symlink_merge_fields</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>topmenu_show_descriptions</key>
+            <value>1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>tree_default_sort</key>
+            <value>menuindex</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>tree_root_id</key>
+            <value type="int">0</value>
+            <xtype>numberfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>tvs_below_content</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>udperms_allowroot</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>unauthorized_page</key>
+            <value type="int">1</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>upload_files</key>
+            <value>txt,html,htm,xml,js,css,zip,gz,rar,z,tgz,tar,htaccess,mp3,mp4,aac,wav,au,wmv,avi,mpg,mpeg,pdf,doc,xls,txt,ppt,pptx,docx,xlsx,jpg,jpeg,png,gif,psd,ico,bmp,odt,ods,odp,odb,odg,odf,docx,pptx,xlsx</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>upload_flash</key>
+            <value>swf,fla</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>upload_images</key>
+            <value>jpg,jpeg,png,gif,psd,ico,bmp</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>upload_maxsize</key>
+            <value type="int">1048576</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>upload_media</key>
+            <value>mp3,wav,au,wmv,avi,mpg,mpeg</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>use_alias_path</key>
+            <value type="boolean">0</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>furls</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>use_browser</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>file</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>use_editor</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>editor</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>use_multibyte</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>language</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>use_weblink_target</key>
+            <value type="boolean" />
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>webpwdreminder_message</key>
+            <value type="html">&lt;p&gt;Hello ,&lt;/p&gt;
+
+                &lt;p&gt;To activate your new password click the following link:&lt;/p&gt;
+
+                &lt;p&gt;&lt;/p&gt;
+
+                &lt;p&gt;If successful you can use the following password to login:&lt;/p&gt;
+
+                &lt;p&gt;&lt;strong&gt;Password:&lt;/strong&gt; &lt;/p&gt;
+
+                &lt;p&gt;If you did not request this email then please ignore it.&lt;/p&gt;
+
+                &lt;p&gt;Regards,&lt;br /&gt;
+                Site Administrator&lt;/p&gt;</value>
+            <xtype>textarea</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>websignupemail_message</key>
+            <value type="html">&lt;p&gt;Hello ,&lt;/p&gt;
+
+                &lt;p&gt;Here are your login details for :&lt;/p&gt;
+
+                &lt;p&gt;&lt;strong&gt;Username:&lt;/strong&gt; &lt;br /&gt;
+                &lt;strong&gt;Password:&lt;/strong&gt; &lt;/p&gt;
+
+                &lt;p&gt;Once you log into at , you can change your password.&lt;/p&gt;
+
+                &lt;p&gt;Regards,&lt;br /&gt;
+                Site Administrator&lt;/p&gt;</value>
+            <xtype>textarea</xtype>
+            <namespace>core</namespace>
+            <area>authentication</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>welcome_screen</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>welcome_screen_url</key>
+            <value>http://misc.modx.com/revolution/welcome.22.html</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>manager</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>which_editor</key>
+            <value/>
+            <xtype>modx-combo-rte</xtype>
+            <namespace>core</namespace>
+            <area>editor</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>which_element_editor</key>
+            <value/>
+            <xtype>modx-combo-rte</xtype>
+            <namespace>core</namespace>
+            <area>editor</area>
+            <editedon/>
+        </vehicle>
+        <vehicle object_class="modSystemSetting">
+            <key>xhtml_urls</key>
+            <value>1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>site</area>
+            <editedon/>
+        </vehicle>
+    </vehiclecollection>
+</data>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="0">
+        <vehicle object_class="modUserGroupRole">
+            <id type="int">1</id>
+            <name>Member</name>
+            <description />
+            <authority type="int">9999</authority>
+        </vehicle>
+        <vehicle object_class="modUserGroupRole">
+            <id type="int">2</id>
+            <name>Super User</name>
+            <description />
+            <authority type="int">0</authority>
+        </vehicle>
+    </vehiclecollection>
+</data>

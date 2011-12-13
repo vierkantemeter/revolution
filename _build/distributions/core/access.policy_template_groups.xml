@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="1" unique_key="name">
+        <vehicle object_class="modAccessPolicyTemplateGroup">
+            <name>Admin</name>
+            <description>All admin policy templates.</description>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplateGroup">
+            <name>Object</name>
+            <description>All Object-based policy templates.</description>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplateGroup">
+            <name>Resource</name>
+            <description>All Resource-based policy templates.</description>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplateGroup">
+            <name>Element</name>
+            <description>All Element-based policy templates.</description>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplateGroup">
+            <name>MediaSource</name>
+            <description>All Media Source-based policy templates.</description>
+        </vehicle>
+    </vehiclecollection>
+</data>

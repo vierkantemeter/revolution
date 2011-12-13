@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="1" unique_key="namespace,controller">
+        <vehicle object_class="modAction">
+            <id type="int">1</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>welcome</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>welcome,configcheck</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">3</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>system</controller>
+            <haslayout>0</haslayout>
+            <lang_topics/>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">5</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>browser</controller>
+            <haslayout>0</haslayout>
+            <lang_topics>file</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">7</id>
+            <namespace>core</namespace>
+            <parent type="int">6</parent>
+            <controller>context/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>context,setting,access,policy,user</lang_topics>
+            <assets/>
+            <help_url>Contexts</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">8</id>
+            <namespace>core</namespace>
+            <parent type="int">6</parent>
+            <controller>context/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>context,setting,access,policy,user</lang_topics>
+            <assets/>
+            <help_url>Contexts</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">9</id>
+            <namespace>core</namespace>
+            <parent type="int">6</parent>
+            <controller>context/view</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>context</lang_topics>
+            <assets/>
+            <help_url>Contexts</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">10</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>element</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>element</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">11</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/chunk</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>chunk,category,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Chunks</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">12</id>
+            <namespace>core</namespace>
+            <parent type="int">11</parent>
+            <controller>element/chunk/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>chunk,category,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Chunks</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">13</id>
+            <namespace>core</namespace>
+            <parent type="int">11</parent>
+            <controller>element/chunk/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>chunk,category,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Chunks</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">20</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/plugin</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>plugin,category,system_events,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Plugins</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">21</id>
+            <namespace>core</namespace>
+            <parent type="int">20</parent>
+            <controller>element/plugin/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>plugin,category,system_events,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Plugins</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">22</id>
+            <namespace>core</namespace>
+            <parent type="int">20</parent>
+            <controller>element/plugin/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>plugin,category,system_events,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Plugins</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">25</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/snippet</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>snippet,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Snippets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">26</id>
+            <namespace>core</namespace>
+            <parent type="int">25</parent>
+            <controller>element/snippet/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>snippet,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Snippets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">27</id>
+            <namespace>core</namespace>
+            <parent type="int">25</parent>
+            <controller>element/snippet/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>snippet,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Snippets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">28</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/template</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>template,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Templates</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">29</id>
+            <namespace>core</namespace>
+            <parent type="int">28</parent>
+            <controller>element/template/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>template,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Templates</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">30</id>
+            <namespace>core</namespace>
+            <parent type="int">28</parent>
+            <controller>element/template/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>template,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Templates</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">31</id>
+            <namespace>core</namespace>
+            <parent type="int">28</parent>
+            <controller>element/template/tvsort</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>template,tv,propertyset,element</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">32</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/tv</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>tv,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Template+Variables</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">33</id>
+            <namespace>core</namespace>
+            <parent type="int">32</parent>
+            <controller>element/tv/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>tv,tv_widget,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Template+Variables</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">34</id>
+            <namespace>core</namespace>
+            <parent type="int">32</parent>
+            <controller>element/tv/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>tv,tv_widget,propertyset,element</lang_topics>
+            <assets/>
+            <help_url>Template+Variables</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">35</id>
+            <namespace>core</namespace>
+            <parent type="int">10</parent>
+            <controller>element/view</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>element</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">36</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>resource</controller>
+            <haslayout>1</haslayout>
+            <lang_topics/>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">38</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/usergroup/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,access,policy,context</lang_topics>
+            <assets/>
+            <help_url>User+Groups</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">39</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/usergroup/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,access,policy,context</lang_topics>
+            <assets/>
+            <help_url>User+Groups</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">40</id>
+            <namespace>core</namespace>
+            <parent type="int">36</parent>
+            <controller>resource/data</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>resource</lang_topics>
+            <assets/>
+            <help_url>Resource</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">41</id>
+            <namespace>core</namespace>
+            <parent type="int">36</parent>
+            <controller>resource/empty_recycle_bin</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>resource</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">43</id>
+            <namespace>core</namespace>
+            <parent type="int">36</parent>
+            <controller>resource/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>resource</lang_topics>
+            <assets/>
+            <help_url>Resource</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">46</id>
+            <namespace>core</namespace>
+            <parent type="int">0</parent>
+            <controller>security</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">50</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/role</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user</lang_topics>
+            <assets/>
+            <help_url>Roles</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">54</id>
+            <namespace>core</namespace>
+            <parent type="int">53</parent>
+            <controller>security/user/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,setting,access</lang_topics>
+            <assets/>
+            <help_url>Users</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">55</id>
+            <namespace>core</namespace>
+            <parent type="int">53</parent>
+            <controller>security/user/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,setting,access</lang_topics>
+            <assets/>
+            <help_url>Users</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">56</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/login</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>login</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">62</id>
+            <namespace>core</namespace>
+            <parent type="int">3</parent>
+            <controller>system/refresh_site</controller>
+            <haslayout>1</haslayout>
+            <lang_topics/>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">64</id>
+            <namespace>core</namespace>
+            <parent type="int">3</parent>
+            <controller>system/phpinfo</controller>
+            <haslayout>1</haslayout>
+            <lang_topics/>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">67</id>
+            <namespace>core</namespace>
+            <parent type="int">36</parent>
+            <controller>resource/tvs</controller>
+            <haslayout>0</haslayout>
+            <lang_topics/>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">70</id>
+            <namespace>core</namespace>
+            <parent type="int">3</parent>
+            <controller>system/file</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>file</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">71</id>
+            <namespace>core</namespace>
+            <parent type="int">70</parent>
+            <controller>system/file/edit</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>file</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">75</id>
+            <namespace>core</namespace>
+            <parent type="int">65</parent>
+            <controller>security/access/policy/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,policy</lang_topics>
+            <assets/>
+            <help_url>Policies</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">82</id>
+            <namespace>core</namespace>
+            <parent type="int">212</parent>
+            <controller>workspaces/package/view</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>workspace,namespace</lang_topics>
+            <assets/>
+            <help_url>Package+Management</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">83</id>
+            <namespace>core</namespace>
+            <parent type="int">65</parent>
+            <controller>security/access/policy/template/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>user,policy</lang_topics>
+            <assets/>
+            <help_url>PolicyTemplates</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">84</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/forms/profile/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>formcustomization,user,access,policy</lang_topics>
+            <assets/>
+            <help_url>Form+Customization+Profiles</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">85</id>
+            <namespace>core</namespace>
+            <parent type="int">46</parent>
+            <controller>security/forms/set/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>formcustomization,user,access,policy</lang_topics>
+            <assets/>
+            <help_url>Form+Customization+Sets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">101</id>
+            <namespace>core</namespace>
+            <parent type="int">100</parent>
+            <controller>system/dashboards/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>dashboards,user</lang_topics>
+            <assets/>
+            <help_url>Dashboards</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">102</id>
+            <namespace>core</namespace>
+            <parent type="int">100</parent>
+            <controller>system/dashboards/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>dashboards,user</lang_topics>
+            <assets/>
+            <help_url>Dashboards</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">103</id>
+            <namespace>core</namespace>
+            <parent type="int">100</parent>
+            <controller>system/dashboards/widget/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>dashboards,user</lang_topics>
+            <assets/>
+            <help_url>Dashboard+Widgets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">104</id>
+            <namespace>core</namespace>
+            <parent type="int">100</parent>
+            <controller>system/dashboards/widget/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>dashboards,user</lang_topics>
+            <assets/>
+            <help_url>Dashboard+Widgets</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">105</id>
+            <namespace>core</namespace>
+            <parent type="int">101</parent>
+            <controller>source/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>sources,namespace</lang_topics>
+            <assets/>
+            <help_url>Media+Sources</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">106</id>
+            <namespace>core</namespace>
+            <parent type="int">101</parent>
+            <controller>source/update</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>sources,namespace</lang_topics>
+            <assets/>
+            <help_url>Media+Sources</help_url>
+        </vehicle>
+        <vehicle object_class="modAction">
+            <id type="int">107</id>
+            <namespace>core</namespace>
+            <parent type="int">70</parent>
+            <controller>system/file/create</controller>
+            <haslayout>1</haslayout>
+            <lang_topics>file</lang_topics>
+            <assets/>
+            <help_url/>
+        </vehicle>
+    </vehiclecollection>
+</data>

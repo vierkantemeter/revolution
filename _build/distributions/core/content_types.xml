@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="0" unique_key="mime_type">
+      <vehicle object_class="modContentType">
+        <id type="int">1</id>
+        <name>HTML</name>
+        <description>HTML content</description>
+        <mime_type>text/html</mime_type>
+        <file_extensions>.html</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+      <vehicle object_class="modContentType">
+        <id type="int">2</id>
+        <name>XML</name>
+        <description>XML content</description>
+        <mime_type>text/xml</mime_type>
+        <file_extensions>.xml</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+      <vehicle object_class="modContentType">
+        <id type="int">3</id>
+        <name>text</name>
+        <description>plain text content</description>
+        <mime_type>text/plain</mime_type>
+        <file_extensions>.txt</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+      <vehicle object_class="modContentType">
+        <id type="int">4</id>
+        <name>CSS</name>
+        <description>CSS content</description>
+        <mime_type>text/css</mime_type>
+        <file_extensions>.css</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+      <vehicle object_class="modContentType">
+        <id type="int">5</id>
+        <name>javascript</name>
+        <description>javascript content</description>
+        <mime_type>text/javascript</mime_type>
+        <file_extensions>.js</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+      <vehicle object_class="modContentType">
+        <id type="int">6</id>
+        <name>RSS</name>
+        <description>For RSS feeds</description>
+        <mime_type>application/rss+xml</mime_type>
+        <file_extensions>.rss</file_extensions>
+        <headers/>
+        <binary/>
+      </vehicle>
+    </vehiclecollection>
+</data>

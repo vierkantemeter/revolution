@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <!-- web -->
+    <vehicle object_class="modContext" preserve_keys="1" update_object="0">
+        <key>web</key>
+        <description>The default front-end context for your web site.</description>
+
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}index.php</source>
+            <target>return MODX_BASE_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}ht.access</source>
+            <target>return MODX_BASE_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>php</type>
+            <source type="path">{{MODX_BUILD_DIR}}resolvers/resolve.core.php</source>
+            <target>return MODX_BASE_PATH . 'config.core.php';</target>
+        </xpdo_resolver>
+    </vehicle>
+
+    <!-- mgr -->
+    <vehicle object_class="modContext" preserve_keys="1" update_object="0">
+        <key>mgr</key>
+        <description>The default manager or administration context for content management activity.</description>
+
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/assets</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/controllers</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/templates</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/min</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/ht.access</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/cache.manifest.php</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>file</type>
+            <source type="path">{{MODX_BASE_PATH}}manager/index.php</source>
+            <target>return MODX_MANAGER_PATH;</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>php</type>
+            <source type="path">{{MODX_BUILD_DIR}}resolvers/resolve.core.php</source>
+            <target>return MODX_MANAGER_PATH . 'config.core.php';</target>
+        </xpdo_resolver>
+    </vehicle>
+
+    <!-- connectors/ -->
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/browser</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/context</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/element</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/layout</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/resource</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/security</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/source</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/system</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/workspace</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/lang.js.php</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+    </vehicle>
+
+    <vehicle class="xPDOFileVehicle">
+        <source type="path">{{MODX_BASE_PATH}}connectors/index.php</source>
+        <target>return MODX_CONNECTORS_PATH;</target>
+
+        <xpdo_resolver>
+            <type>php</type>
+            <source type="path">{{MODX_BUILD_DIR}}resolvers/resolve.core.php</source>
+            <target>return MODX_CONNECTORS_PATH . 'config.core.php';</target>
+        </xpdo_resolver>
+        <xpdo_resolver>
+            <type>php</type>
+            <source type="path">{{MODX_BUILD_DIR}}resolvers/resolve.actionfields.php</source>
+        </xpdo_resolver>
+    </vehicle>
+</data>

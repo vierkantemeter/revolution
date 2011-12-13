@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="1" unique_key="name" related_objects="1">
+        <relatedobjectattribute alias="Permissions" preserve_keys="0" update_object="1" unique_key="template,name" />
+
+        <vehicle object_class="modAccessPolicyTemplate">
+            <template_group>0</template_group>
+            <name>AdministratorTemplate</name>
+            <description>Context administration policy template with all permissions.</description>
+            <lexicon>permissions</lexicon>
+
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>about</name>
+                <description>perm.about_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>access_permissions</name>
+                <description>perm.access_permissions_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>actions</name>
+                <description>perm.actions_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>change_password</name>
+                <description>perm.change_password_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>change_profile</name>
+                <description>perm.change_profile_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>charsets</name>
+                <description>perm.charsets_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>class_map</name>
+                <description>perm.class_map_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>components</name>
+                <description>perm.components_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>content_types</name>
+                <description>perm.content_types_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>countries</name>
+                <description>perm.countries_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>create</name>
+                <description>perm.create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>credits</name>
+                <description>perm.credits_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>customize_forms</name>
+                <description>perm.customize_forms_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>dashboards</name>
+                <description>perm.dashboards_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>database</name>
+                <description>perm.database_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>database_truncate</name>
+                <description>perm.database_truncate_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_category</name>
+                <description>perm.delete_category_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_chunk</name>
+                <description>perm.delete_chunk_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_context</name>
+                <description>perm.delete_context_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_document</name>
+                <description>perm.delete_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_eventlog</name>
+                <description>perm.delete_eventlog_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_plugin</name>
+                <description>perm.delete_plugin_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_propertyset</name>
+                <description>perm.delete_propertyset_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_snippet</name>
+                <description>perm.delete_snippet_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_template</name>
+                <description>perm.delete_template_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_tv</name>
+                <description>perm.delete_tv_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_role</name>
+                <description>perm.delete_role_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete_user</name>
+                <description>perm.delete_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>directory_chmod</name>
+                <description>perm.directory_chmod_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>directory_create</name>
+                <description>perm.directory_create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>directory_list</name>
+                <description>perm.directory_list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>directory_remove</name>
+                <description>perm.directory_remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>directory_update</name>
+                <description>perm.directory_update_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_category</name>
+                <description>perm.edit_category_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_chunk</name>
+                <description>perm.edit_chunk_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_context</name>
+                <description>perm.edit_context_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_document</name>
+                <description>perm.edit_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_locked</name>
+                <description>perm.edit_locked_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_plugin</name>
+                <description>perm.edit_plugin_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_propertyset</name>
+                <description>perm.edit_propertyset_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_role</name>
+                <description>perm.edit_role_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_snippet</name>
+                <description>perm.edit_snippet_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_template</name>
+                <description>perm.edit_template_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_tv</name>
+                <description>perm.edit_tv_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>edit_user</name>
+                <description>perm.edit_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>element_tree</name>
+                <description>perm.element_tree_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>empty_cache</name>
+                <description>perm.empty_cache_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>error_log_erase</name>
+                <description>perm.error_log_erase_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>error_log_view</name>
+                <description>perm.error_log_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>export_static</name>
+                <description>perm.export_static_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_create</name>
+                <description>perm.file_create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_list</name>
+                <description>perm.file_list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_manager</name>
+                <description>perm.file_manager_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_remove</name>
+                <description>perm.file_remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_tree</name>
+                <description>perm.file_tree_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_update</name>
+                <description>perm.file_update_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_upload</name>
+                <description>perm.file_upload_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>file_view</name>
+                <description>perm.file_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>flush_sessions</name>
+                <description>perm.flush_sessions_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>frames</name>
+                <description>perm.frames_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>help</name>
+                <description>perm.help_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>home</name>
+                <description>perm.home_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>import_static</name>
+                <description>perm.import_static_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>languages</name>
+                <description>perm.languages_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>lexicons</name>
+                <description>perm.lexicons_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>list</name>
+                <description>perm.list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>load</name>
+                <description>perm.load_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>logout</name>
+                <description>perm.logout_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>logs</name>
+                <description>perm.logs_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_reports</name>
+                <description>perm.menu_reports_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_security</name>
+                <description>perm.menu_security_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_site</name>
+                <description>perm.menu_site_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_support</name>
+                <description>perm.menu_support_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_system</name>
+                <description>perm.menu_system_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_tools</name>
+                <description>perm.menu_tools_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menu_user</name>
+                <description>perm.menu_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>menus</name>
+                <description>perm.menus_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>messages</name>
+                <description>perm.messages_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>namespaces</name>
+                <description>perm.namespaces_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_category</name>
+                <description>perm.new_category_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_chunk</name>
+                <description>perm.new_chunk_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_context</name>
+                <description>perm.new_context_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_document</name>
+                <description>perm.new_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_static_resource</name>
+                <description>perm.new_static_resource_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_symlink</name>
+                <description>perm.new_symlink_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_weblink</name>
+                <description>perm.new_weblink_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_document_in_root</name>
+                <description>perm.new_document_in_root_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_plugin</name>
+                <description>perm.new_plugin_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_propertyset</name>
+                <description>perm.new_propertyset_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_role</name>
+                <description>perm.new_role_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_snippet</name>
+                <description>perm.new_snippet_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_template</name>
+                <description>perm.new_template_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_tv</name>
+                <description>perm.new_tv_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>new_user</name>
+                <description>perm.new_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>packages</name>
+                <description>perm.packages_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_delete</name>
+                <description>perm.policy_delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_edit</name>
+                <description>perm.policy_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_new</name>
+                <description>perm.policy_new_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_save</name>
+                <description>perm.policy_save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_view</name>
+                <description>perm.policy_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_template_delete</name>
+                <description>perm.policy_template_delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_template_edit</name>
+                <description>perm.policy_template_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_template_new</name>
+                <description>perm.policy_template_new_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_template_save</name>
+                <description>perm.policy_template_save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>policy_template_view</name>
+                <description>perm.policy_template_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>property_sets</name>
+                <description>perm.property_sets_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>providers</name>
+                <description>perm.providers_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>publish_document</name>
+                <description>perm.publish_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>purge_deleted</name>
+                <description>perm.purge_deleted_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove</name>
+                <description>perm.remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove_locks</name>
+                <description>perm.remove_locks_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_delete</name>
+                <description>perm.resourcegroup_delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_edit</name>
+                <description>perm.resourcegroup_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_new</name>
+                <description>perm.resourcegroup_new_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_resource_edit</name>
+                <description>perm.resourcegroup_resource_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_resource_list</name>
+                <description>perm.resourcegroup_resource_list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_save</name>
+                <description>perm.resourcegroup_save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resourcegroup_view</name>
+                <description>perm.resourcegroup_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resource_quick_create</name>
+                <description>perm.resource_quick_create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resource_quick_update</name>
+                <description>perm.resource_quick_update_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>resource_tree</name>
+                <description>perm.resource_tree_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save</name>
+                <description>perm.save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_category</name>
+                <description>perm.save_category_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_chunk</name>
+                <description>perm.save_chunk_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_context</name>
+                <description>perm.save_context_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_document</name>
+                <description>perm.save_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_plugin</name>
+                <description>perm.save_plugin_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_propertyset</name>
+                <description>perm.save_propertyset_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_role</name>
+                <description>perm.save_role_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_snippet</name>
+                <description>perm.save_snippet_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_template</name>
+                <description>perm.save_template_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_tv</name>
+                <description>perm.save_tv_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save_user</name>
+                <description>perm.save_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>search</name>
+                <description>perm.search_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>settings</name>
+                <description>perm.settings_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>source_save</name>
+                <description>perm.source_save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>source_delete</name>
+                <description>perm.source_delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>source_edit</name>
+                <description>perm.source_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>source_view</name>
+                <description>perm.source_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>sources</name>
+                <description>perm.sources_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>steal_locks</name>
+                <description>perm.steal_locks_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>tree_show_element_ids</name>
+                <description>perm.tree_show_element_ids_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>tree_show_resource_ids</name>
+                <description>perm.tree_show_resource_ids_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>undelete_document</name>
+                <description>perm.undelete_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>unpublish_document</name>
+                <description>perm.unpublish_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>unlock_element_properties</name>
+                <description>perm.unlock_element_properties_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_delete</name>
+                <description>perm.usergroup_delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_edit</name>
+                <description>perm.usergroup_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_new</name>
+                <description>perm.usergroup_new_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_save</name>
+                <description>perm.usergroup_save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_user_edit</name>
+                <description>perm.usergroup_user_edit_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_user_list</name>
+                <description>perm.usergroup_user_list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>usergroup_view</name>
+                <description>perm.usergroup_view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view</name>
+                <description>perm.view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_category</name>
+                <description>perm.view_category_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_chunk</name>
+                <description>perm.view_chunk_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_context</name>
+                <description>perm.view_context_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_document</name>
+                <description>perm.view_document_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_element</name>
+                <description>perm.view_element_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_eventlog</name>
+                <description>perm.view_eventlog_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_offline</name>
+                <description>perm.view_offline_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_plugin</name>
+                <description>perm.view_plugin_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_propertyset</name>
+                <description>perm.view_propertyset_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_role</name>
+                <description>perm.view_role_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_snippet</name>
+                <description>perm.view_snippet_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_sysinfo</name>
+                <description>perm.view_sysinfo_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_template</name>
+                <description>perm.view_template_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_tv</name>
+                <description>perm.view_tv_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_user</name>
+                <description>perm.view_user_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view_unpublished</name>
+                <description>perm.view_unpublished_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>workspaces</name>
+                <description>perm.workspaces_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplate">
+            <template_group>0</template_group>
+            <name>ResourceTemplate</name>
+            <description>Resource Policy Template with all attributes.</description>
+            <lexicon>permissions</lexicon>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>add_children</name>
+                <description>perm.add_children_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>copy</name>
+                <description>perm.copy_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>create</name>
+                <description>perm.create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete</name>
+                <description>perm.delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>list</name>
+                <description>perm.list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>load</name>
+                <description>perm.load_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>move</name>
+                <description>perm.move_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>publish</name>
+                <description>perm.publish_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove</name>
+                <description>perm.remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save</name>
+                <description>perm.save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>steal_lock</name>
+                <description>perm.steal_lock_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>undelete</name>
+                <description>perm.undelete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>unpublish</name>
+                <description>perm.unpublish_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view</name>
+                <description>perm.view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplate">
+            <template_group>0</template_group>
+            <name>ObjectTemplate</name>
+            <description>Object Policy Template with all attributes.</description>
+            <lexicon>permissions</lexicon>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>load</name>
+                <description>perm.load_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>list</name>
+                <description>perm.list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view</name>
+                <description>perm.view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save</name>
+                <description>perm.save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove</name>
+                <description>perm.remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplate">
+            <template_group>0</template_group>
+            <name>ElementTemplate</name>
+            <description>Element Policy Template with all attributes.</description>
+            <lexicon>permissions</lexicon>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>add_children</name>
+                <description>perm.add_children_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>create</name>
+                <description>perm.create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>copy</name>
+                <description>perm.copy_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>delete</name>
+                <description>perm.delete_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>list</name>
+                <description>perm.list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>load</name>
+                <description>perm.load_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove</name>
+                <description>perm.remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save</name>
+                <description>perm.save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view</name>
+                <description>perm.view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+        </vehicle>
+        <vehicle object_class="modAccessPolicyTemplate">
+            <template_group>0</template_group>
+            <name>MediaSourceTemplate</name>
+            <description>Media Source Policy Template with all attributes.</description>
+            <lexicon>permissions</lexicon>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>create</name>
+                <description>perm.create_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>copy</name>
+                <description>perm.copy_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>list</name>
+                <description>perm.list_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>load</name>
+                <description>perm.load_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>remove</name>
+                <description>perm.remove_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>save</name>
+                <description>perm.save_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modAccessPermission" alias="Permissions" cardinality="many">
+                <template>0</template>
+                <name>view</name>
+                <description>perm.view_desc</description>
+                <value>1</value>
+            </xpdo_related_object>
+
+            <xpdo_resolver>
+                <type>php</type>
+                <source type="path">{{MODX_BUILD_DIR}}resolvers/resolve.policytemplates.php</source>
+            </xpdo_resolver>
+        </vehicle>
+    </vehiclecollection>
+</data>

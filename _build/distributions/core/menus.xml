@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="1" unique_key="text" related_objects="1">
+        <relatedobjectattribute alias="Action" preserve_keys="0" update_object="1" unique_key="namespace,controller" related_objects="1">
+            <relatedobjectattribute alias="Children" preserve_keys="0" update_object="1" unique_key="namespace,controller"/>
+        </relatedobjectattribute>
+        <relatedobjectattribute alias="Children" preserve_keys="1" update_object="1" unique_key="text" related_objects="1">
+            <relatedobjectattribute alias="Action" preserve_keys="0" update_object="1" unique_key="namespace,controller" related_objects="1">
+                <relatedobjectattribute alias="Children" preserve_keys="0" update_object="1" unique_key="namespace,controller"/>
+            </relatedobjectattribute>
+        </relatedobjectattribute>
+
+        <!-- dashboard -->
+        <vehicle object_class="modMenu">
+            <text>dashboard</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/misc/logo_tbar.gif</icon>
+            <menuindex type="int">0</menuindex>
+            <handler>MODx.loadPage(""); return false;</handler>
+            <permissions>home</permissions>
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>dashboards</text>
+                <parent>reports</parent>
+                <action type="int">100</action>
+                <description>dashboards_desc</description>
+                <icon>images/icons/information.png</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>dashboards</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">100</id>
+                    <namespace>core</namespace>
+                    <parent/>
+                    <controller>system/dashboards</controller>
+                    <haslayout type="boolean">1</haslayout>
+                    <lang_topics type="int">core:dashboards</lang_topics>
+                    <assets/>
+                    <help_url>Dashboards</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- site menu -->
+        <vehicle object_class="modMenu">
+            <text>site</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/misc/logo_tbar.gif</icon>
+            <menuindex type="int">1</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_site</permissions>
+
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>preview</text>
+                <parent>site</parent>
+                <action type="int">0</action>
+                <description>preview_desc</description>
+                <icon>images/icons/show.gif</icon>
+                <menuindex type="int">0</menuindex>
+                <handler>MODx.preview(); return false;</handler>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>refresh_site</text>
+                <parent>site</parent>
+                <action type="int">0</action>
+                <description>refresh_site_desc</description>
+                <icon>images/icons/refresh.png</icon>
+                <menuindex type="int">1</menuindex>
+                <handler>MODx.clearCache(); return false;</handler>
+                <permissions>empty_cache</permissions>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>remove_locks</text>
+                <parent>site</parent>
+                <action type="int">0</action>
+                <description>remove_locks_desc</description>
+                <icon>images/ext/default/grid/hmenu-unlock.png</icon>
+                <menuindex type="int">2</menuindex>
+                <handler>MODx.msg.confirm({
+    title: _('remove_locks')
+    ,text: _('confirm_remove_locks')
+    ,url: MODx.config.connectors_url+'system/remove_locks.php'
+    ,params: {
+        action: 'remove'
+    }
+    ,listeners: {
+        'success': {fn:function() { Ext.getCmp("modx-resource-tree").refresh(); },scope:this}
+    }
+});</handler>
+                <permissions>remove_locks</permissions>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>search</text>
+                <parent>site</parent>
+                <action type="int">45</action>
+                <description>search_desc</description>
+                <icon>images/icons/context_view.gif</icon>
+                <menuindex type="int">3</menuindex>
+                <permissions>search</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">45</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>search</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics />
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>new_document</text>
+                <parent>site</parent>
+                <action type="int">44</action>
+                <description>new_document_desc</description>
+                <icon>images/icons/folder_page_add.png</icon>
+                <menuindex type="int">4</menuindex>
+                <permissions>new_document</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">43</id>
+                    <parent>36</parent>
+                    <namespace>core</namespace>
+                    <controller>resource/create</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource</lang_topics>
+                    <assets />
+                    <help_url>Resource</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>new_weblink</text>
+                <parent>site</parent>
+                <action type="int">44</action>
+                <description>new_weblink_desc</description>
+                <icon>images/icons/link_add.png</icon>
+                <menuindex type="int">5</menuindex>
+                <params type="html">&amp;class_key=modWebLink</params>
+                <permissions>new_weblink</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">43</id>
+                    <parent>36</parent>
+                    <namespace>core</namespace>
+                    <controller>resource/create</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource</lang_topics>
+                    <assets />
+                    <help_url>Resource</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>new_symlink</text>
+                <parent>site</parent>
+                <action type="int">44</action>
+                <description>new_symlink_desc</description>
+                <icon>images/icons/link_add.png</icon>
+                <menuindex type="int">6</menuindex>
+                <params type="html">&amp;class_key=modSymLink</params>
+                <permissions>new_symlink</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">43</id>
+                    <parent>36</parent>
+                    <namespace>core</namespace>
+                    <controller>resource/create</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource</lang_topics>
+                    <assets />
+                    <help_url>Resource</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>new_static_resource</text>
+                <parent>site</parent>
+                <action type="int">44</action>
+                <description>new_static_resource_desc</description>
+                <icon>images/icons/link_add.png</icon>
+                <menuindex type="int">7</menuindex>
+                <params type="html">&amp;class_key=modStaticResource</params>
+                <permissions>new_static_resource</permissions>
+
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">43</id>
+                    <parent>36</parent>
+                    <namespace>core</namespace>
+                    <controller>resource/create</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource</lang_topics>
+                    <assets />
+                    <help_url>Resource</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>logout</text>
+                <parent>site</parent>
+                <action type="int">0</action>
+                <description>logout_desc</description>
+                <icon>images/misc/logo_tbar.png</icon>
+                <menuindex type="int">8</menuindex>
+                <handler>MODx.logout(); return false;</handler>
+                <permissions>logout</permissions>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- components -->
+        <vehicle object_class="modMenu">
+            <text>components</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/icons/plugin.gif</icon>
+            <menuindex type="int">2</menuindex>
+            <params/>
+            <handler/>
+            <permissions>components</permissions>
+        </vehicle>
+
+        <!-- security -->
+        <vehicle object_class="modMenu">
+            <text>security</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/icons/lock.gif</icon>
+            <menuindex type="int">3</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_security</permissions>
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>user_management</text>
+                <parent>security</parent>
+                <action type="int">53</action>
+                <description>user_management_desc</description>
+                <icon>images/icons/user.gif</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>view_user</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">53</id>
+                    <parent>46</parent>
+                    <namespace>core</namespace>
+                    <controller>security/user</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>user</lang_topics>
+                    <assets />
+                    <help_url>Users</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>user_group_management</text>
+                <parent>security</parent>
+                <action type="int">66</action>
+                <description>user_group_management_desc</description>
+                <icon>images/icons/mnu_users.gif</icon>
+                <menuindex type="int">1</menuindex>
+                <permissions>access_permissions</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">66</id>
+                    <parent>46</parent>
+                    <namespace>core</namespace>
+                    <controller>security/permission</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>user,access,policy</lang_topics>
+                    <assets />
+                    <help_url>Security</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>resource_groups</text>
+                <parent>security</parent>
+                <action type="int">53</action>
+                <description>resource_groups_desc</description>
+                <icon>images/icons/user.gif</icon>
+                <menuindex type="int">2</menuindex>
+                <permissions>access_permissions</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">37</id>
+                    <parent>46</parent>
+                    <namespace>core</namespace>
+                    <controller>security/resourcegroup/index</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource,user,access</lang_topics>
+                    <assets />
+                    <help_url>Resource+Groups</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>form_customization</text>
+                <parent>security</parent>
+                <action type="int">83</action>
+                <description>form_customization_desc</description>
+                <icon>images/misc/logo_tbar.gif</icon>
+                <menuindex type="int">3</menuindex>
+                <permissions>customize_forms</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">83</id>
+                    <parent>46</parent>
+                    <namespace>core</namespace>
+                    <controller>security/forms</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>formcustomization,user,access,policy</lang_topics>
+                    <assets />
+                    <help_url>Customizing+The+Manager</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>flush_access</text>
+                <parent>security</parent>
+                <action type="int">0</action>
+                <description>flush_access_desc</description>
+                <icon>images/icons/unzip.gif</icon>
+                <menuindex type="int">4</menuindex>
+                <handler>MODx.msg.confirm({
+    title: _('flush_access')
+    ,text: _('flush_access_confirm')
+    ,url: MODx.config.connectors_url+'security/access/index.php'
+    ,params: {
+        action: 'flush'
+    }
+    ,listeners: {
+        'success': {fn:function() { location.href = './'; },scope:this}
+    }
+});</handler>
+                <permissions>access_permissions</permissions>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>flush_sessions</text>
+                <parent>security</parent>
+                <action type="int">0</action>
+                <description>flush_sessions_desc</description>
+                <icon>images/icons/unzip.gif</icon>
+                <menuindex type="int">5</menuindex>
+                <handler>MODx.msg.confirm({
+    title: _('flush_sessions')
+    ,text: _('flush_sessions_confirm')
+    ,url: MODx.config.connectors_url+'security/flush.php'
+    ,params: {
+        action: 'flush'
+    }
+    ,listeners: {
+        'success': {fn:function() { location.href = './'; },scope:this}
+    }
+});</handler>
+                <permissions>access_permissions</permissions>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- tools -->
+        <vehicle object_class="modMenu">
+            <text>tools</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/icons/menu_settings.gif</icon>
+            <menuindex type="int">4</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_tools</permissions>
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>import_resources</text>
+                <parent>tools</parent>
+                <action type="int">59</action>
+                <description>import_resources_desc</description>
+                <icon>images/icons/application_side_contract.png</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>import_static</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">59</id>
+                    <parent>3</parent>
+                    <namespace>core</namespace>
+                    <controller>system/import</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>import</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>import_site</text>
+                <parent>tools</parent>
+                <action type="int">60</action>
+                <description>import_site_desc</description>
+                <icon>images/icons/application_side_contract.png</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>import_static</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">60</id>
+                    <parent>59</parent>
+                    <namespace>core</namespace>
+                    <controller>system/import/html</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>import</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>propertysets</text>
+                <parent>tools</parent>
+                <action type="int">82</action>
+                <description>propertysets_desc</description>
+                <icon>images/misc/logo_tbar.gif</icon>
+                <menuindex type="int">2</menuindex>
+                <permissions>property_sets</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">82</id>
+                    <parent>10</parent>
+                    <namespace>core</namespace>
+                    <controller>element/propertyset/index</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>element,category,propertyset</lang_topics>
+                    <assets />
+                    <help_url>Properties+and+Property+Sets</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>sources</text>
+                <parent>tools</parent>
+                <action type="int">83</action>
+                <description>sources_desc</description>
+                <icon>images/misc/logo_tbar.gif</icon>
+                <menuindex type="int">3</menuindex>
+                <permissions>sources</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">83</id>
+                    <parent>10</parent>
+                    <namespace>core</namespace>
+                    <controller>source/index</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>sources,namespace</lang_topics>
+                    <assets />
+                    <help_url>Media+Sources</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- reports -->
+        <vehicle object_class="modMenu">
+            <text>reports</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/icons/menu_settings16.gif</icon>
+            <menuindex type="int">5</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_reports</permissions>
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>site_schedule</text>
+                <parent>reports</parent>
+                <action type="int">42</action>
+                <description>site_schedule_desc</description>
+                <icon>images/icons/cal.gif</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>view_document</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">42</id>
+                    <parent>36</parent>
+                    <namespace>core</namespace>
+                    <controller>resource/site_schedule</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>resource</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>view_logging</text>
+                <parent>reports</parent>
+                <action type="int">14</action>
+                <description>view_logging_desc</description>
+                <icon />
+                <menuindex type="int">1</menuindex>
+                <permissions>logs</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">14</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>system/logs/index</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>manager_log</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>eventlog_viewer</text>
+                <parent>reports</parent>
+                <action type="int">57</action>
+                <description>eventlog_viewer_desc</description>
+                <icon>images/icons/comment.gif</icon>
+                <menuindex type="int">2</menuindex>
+                <permissions>view_eventlog</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">57</id>
+                    <parent>3</parent>
+                    <namespace>core</namespace>
+                    <controller>system/event</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>system_events</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>view_sysinfo</text>
+                <parent>reports</parent>
+                <action type="int">4</action>
+                <description>view_sysinfo_desc</description>
+                <icon>images/icons/logging.gif</icon>
+                <menuindex type="int">3</menuindex>
+                <permissions>view_sysinfo</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">4</id>
+                    <parent>3</parent>
+                    <namespace>core</namespace>
+                    <controller>system/info</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>system_info</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>about</text>
+                <parent>reports</parent>
+                <action type="int">63</action>
+                <description>about_desc</description>
+                <icon>images/icons/information.gif</icon>
+                <menuindex type="int">4</menuindex>
+                <permissions>about</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">63</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>help</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>about</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- system -->
+        <vehicle object_class="modMenu">
+            <text>system</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/misc/logo_tbar.gif</icon>
+            <menuindex type="int">6</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_system</permissions>
+
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>manage_workspaces</text>
+                <parent>system</parent>
+                <action type="int">68</action>
+                <description>manage_workspaces_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">0</menuindex>
+                <permissions>packages</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">68</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>workspaces</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>workspace</lang_topics>
+                    <assets />
+                    <help_url>Package+Management</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>system_settings</text>
+                <parent>system</parent>
+                <action type="int">61</action>
+                <description>system_settings_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">1</menuindex>
+                <permissions>settings</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">61</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>system/settings</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>setting</lang_topics>
+                    <assets />
+                    <help_url>Settings</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>lexicon_management</text>
+                <parent>system</parent>
+                <action type="int">73</action>
+                <description>lexicon_management_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">2</menuindex>
+                <permissions>lexicons</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">73</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>workspaces/lexicon</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>package_builder,lexicon,namespace</lang_topics>
+                    <assets />
+                    <help_url>Internationalization</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>content_types</text>
+                <parent>system</parent>
+                <action type="int">69</action>
+                <description>content_types_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">3</menuindex>
+                <permissions>content_types</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">69</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>system/contenttype</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>content_type</lang_topics>
+                    <assets />
+                    <help_url>Content+Types</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>contexts</text>
+                <parent>system</parent>
+                <action type="int">6</action>
+                <description>contexts_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">4</menuindex>
+                <permissions>view_context</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">6</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>context</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>context</lang_topics>
+                    <assets />
+                    <help_url>Contexts</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>edit_menu</text>
+                <parent>system</parent>
+                <action type="int">2</action>
+                <description>edit_menu_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">5</menuindex>
+                <permissions>menus,actions</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">2</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>system/action</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>action,menu,namespace</lang_topics>
+                    <assets />
+                    <help_url>Actions+and+Menus</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>namespaces</text>
+                <parent>system</parent>
+                <action type="int">74</action>
+                <description>namespaces_desc</description>
+                <icon>images/icons/sysinfo.gif</icon>
+                <menuindex type="int">6</menuindex>
+                <permissions>namespaces</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">74</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>workspaces/namespace</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>workspace,package_builder,namespace,lexicon</lang_topics>
+                    <assets />
+                    <help_url>Namespaces</help_url>
+                </xpdo_related_object>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- user -->
+        <vehicle object_class="modMenu">
+            <text>user</text>
+            <parent/>
+            <action type="int">0</action>
+            <description/>
+            <icon>images/icons/user_go.png</icon>
+            <menuindex type="int">7</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_user</permissions>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>profile</text>
+                <parent>user</parent>
+                <action type="int">36</action>
+                <description>profile_desc</description>
+                <icon />
+                <menuindex type="int">0</menuindex>
+                <permissions>change_profile</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">36</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>security/profile</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>user</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>messages</text>
+                <parent>user</parent>
+                <action type="int">47</action>
+                <description>messages_desc</description>
+                <icon />
+                <menuindex type="int">1</menuindex>
+                <permissions>messages</permissions>
+                <xpdo_related_object object_class="modAction" alias="Action" cardinality="one">
+                    <id type="int">47</id>
+                    <parent>0</parent>
+                    <namespace>core</namespace>
+                    <controller>security/message</controller>
+                    <haslayout type="int">1</haslayout>
+                    <lang_topics>messages</lang_topics>
+                    <assets />
+                </xpdo_related_object>
+            </xpdo_related_object>
+        </vehicle>
+
+        <!-- support -->
+        <vehicle object_class="modMenu">
+            <text>support</text>
+            <parent/>
+            <action type="int">0</action>
+            <description>support_desc</description>
+            <icon>images/icons/sysinfo.gif</icon>
+            <menuindex type="int">8</menuindex>
+            <params/>
+            <handler/>
+            <permissions>menu_support</permissions>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>forums</text>
+                <parent>support</parent>
+                <action type="int">0</action>
+                <description>forums_desc</description>
+                <icon />
+                <menuindex type="int">0</menuindex>
+                <handler>window.open("http://forums.modx.com/");</handler>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>wiki</text>
+                <parent>support</parent>
+                <action type="int">0</action>
+                <description>wiki_desc</description>
+                <icon />
+                <menuindex type="int">1</menuindex>
+                <handler>window.open("http://rtfm.modx.com/");</handler>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>jira</text>
+                <parent>support</parent>
+                <action type="int">0</action>
+                <description>jira_desc</description>
+                <icon />
+                <menuindex type="int">2</menuindex>
+                <handler>window.open("http://bugs.modx.com/projects/revo/issues");</handler>
+            </xpdo_related_object>
+            <xpdo_related_object object_class="modMenu" alias="Children" cardinality="many">
+                <text>api_docs</text>
+                <parent>support</parent>
+                <action type="int">0</action>
+                <description>api_docs_desc</description>
+                <icon />
+                <menuindex type="int">3</menuindex>
+                <handler>window.open("http://api.modx.com/revolution/2.2/");</handler>
+            </xpdo_related_object>
+        </vehicle>
+    </vehiclecollection>
+</data>

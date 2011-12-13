@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="1" update_object="0">
+        <vehicle object_class="modContextSetting">
+            <context_key>mgr</context_key>
+            <key>allow_tags_in_post</key>
+            <value type="boolean">1</value>
+            <xtype>combo-boolean</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+        </vehicle>
+        <vehicle object_class="modContextSetting">
+            <context_key>mgr</context_key>
+            <key>modRequest.class</key>
+            <value>modManagerRequest</value>
+            <xtype>textfield</xtype>
+            <namespace>core</namespace>
+            <area>system</area>
+        </vehicle>
+    </vehiclecollection>
+</data>

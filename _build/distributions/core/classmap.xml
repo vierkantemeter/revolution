@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <vehiclecollection preserve_keys="0" update_object="0" unique_key="class">
+      <vehicle object_class="modClassMap">
+        <class>modDocument</class>
+        <parent_class>modResource</parent_class>
+        <name_field>pagetitle</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modWebLink</class>
+        <parent_class>modResource</parent_class>
+        <name_field>pagetitle</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modSymLink</class>
+        <parent_class>modResource</parent_class>
+        <name_field>pagetitle</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modStaticResource</class>
+        <parent_class>modResource</parent_class>
+        <name_field>pagetitle</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modTemplate</class>
+        <parent_class>modElement</parent_class>
+        <name_field>templatename</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modTemplateVar</class>
+        <parent_class>modElement</parent_class>
+        <name_field>name</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modChunk</class>
+        <parent_class>modElement</parent_class>
+        <name_field>name</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modSnippet</class>
+        <parent_class>modElement</parent_class>
+        <name_field>name</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+      <vehicle object_class="modClassMap">
+        <class>modPlugin</class>
+        <parent_class>modElement</parent_class>
+        <name_field>name</name_field>
+        <path/>
+        <lexicon>core:resource</lexicon>
+      </vehicle>
+    </vehiclecollection>
+</data>
