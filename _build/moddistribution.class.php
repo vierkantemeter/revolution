@@ -200,20 +200,25 @@ class modDistribution {
         $this->_loadDefines();
         $this->_loadBuildProperties();
         $this->_loadXPDO();
-
-        $this->log(xPDO::LOG_LEVEL_INFO,'Beginning build script processes...');
-        $this->setPackageDirectory();
-        $this->cleanTransportFiles();
-        $this->createTransport();
     }
 
     public function build() {
-        $this->xpdo->log(xPDO::LOG_LEVEL_INFO,'Adding in Vehicles...');
+        $this->xpdo->log(xPDO::LOG_LEVEL_INFO,'Getting distribution...');
         if ($this->getDistribution()) {
+            $this->log(xPDO::LOG_LEVEL_INFO,'Loading distribution parser...');
             if ($this->loadParser()) {
+                $this->setPackageDirectory();
+                $this->cleanTransportFiles();
+                $this->createTransport();
+
+                $this->log(xPDO::LOG_LEVEL_INFO,'Beginning build script processes...');
                 $this->parser->gather($this->data->children());
                 $this->pack();
+            } else {
+                $this->log(xPDO::LOG_LEVEL_ERROR,'Could not load Distribution Parser: '.$this->config['parser']);
             }
+        } else {
+            $this->xpdo->log(xPDO::LOG_LEVEL_ERROR,'Could not load Distribution: '.$this->config['distribution']);
         }
         $this->endDebug();
     }
