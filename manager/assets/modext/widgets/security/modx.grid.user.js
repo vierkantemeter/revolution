@@ -191,7 +191,7 @@ Ext.extend(MODx.grid.User,MODx.grid.Grid,{
     }
 
     ,createUser: function() {
-        location.href = 'index.php?a='+MODx.action['security/user/create'];
+        location.href = 'index.php?a=security/user/create';
     }
 
     ,activateSelected: function() {
@@ -270,7 +270,7 @@ Ext.extend(MODx.grid.User,MODx.grid.Grid,{
     }
     
     ,updateUser: function() {
-        location.href = 'index.php?a='+MODx.action['security/user/update']+'&id='+this.menu.record.id;
+        location.href = 'index.php?a=security/user/update&id='+this.menu.record.id;
     }
     				
     ,rendGender: function(d,c) {
